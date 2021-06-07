@@ -1,50 +1,42 @@
 import React, { useState } from "react";
-
-//Class Component
-class App extends React.Component {
-  state = {
-    item: 1,
-  };
-  incrementItem = () => {
-    this.setState((state) => {
-      return {
-        item: state.item + 1,
-      };
-    });
-  };
-  decrementItem = () => {
-    this.setState((state) => {
-      return {
-        item: state.item - 1,
-      };
-    });
-  };
-  render() {
-    const { item } = this.state;
-    return (
-      <div>
-        <h1>Class Component</h1>
-        <div>{item}</div>
-        <button onClick={this.incrementItem}>increment</button>
-        <button onClick={this.decrementItem}>decrement</button>
-      </div>
-    );
-  }
-}
-
-// //Functional Component
-// const App = () => {
-//   const [item, setItem] = useState(1);
-//   const incrementItem = () => setItem(item + 1);
-//   const decrementItem = () => setItem(item - 1);
-//   return (
-//     <div>
-// <h1>Functional Component</h1>
-//       <div>{item}</div>
-//       <button onClick={incrementItem}>increment</button>
-//       <button onClick={decrementItem}>decrement</button>
-//     </div>
-//   );
-// };
+import AppUseState from "./AppUseState";
+import AppUseInput from "./AppUseInput";
+import AppUseTabs from "./AppUseTabs";
+import AppUseEffect from "./AppUseEffect";
+import AppUseTitle from "./AppUseTitle";
+import AppUseClick from "./AppUseClick";
+import AppUseHover from "./AppUseHover";
+import AppUseConfirm from "./AppUseConfirm";
+import AppUsePreventLeave from "./AppUsePreventLeave";
+import AppUsePageLeave from "./AppUsePageLeave";
+import AppUseFadeIn from "./AppUseFadeIn";
+import AppUseNetwork from "./AppUseNetwork";
+import AppUseScroll from "./AppUseScroll";
+import AppUseFullscreen from "./AppUseFullscreen";
+import AppUseNotification from "./AppUseNotification";
+import AppUseAxios from "./AppUseAxios";
+//Functional Component
+const App = () => {
+  return (
+    <>
+      {/* <AppUseState />
+      <AppUseInput />
+      <AppUseTabs />
+      <AppUseEffect />
+      <AppUseTitle />
+      <AppUseClick />
+      <AppUseHover />
+      <AppUseConfirm />
+      <AppUsePreventLeave />
+      <AppUsePageLeave />
+      <AppUseFadeIn />
+      <AppUseNetwork /> */}
+      {/* <AppUseScroll /> */}
+      {/* <AppUseFullscreen /> */}
+      {/* <AppUseNotification /> */}
+      <AppUseAxios />
+    </>
+  );
+};
 
 export default App;
